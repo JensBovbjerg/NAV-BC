@@ -1,6 +1,9 @@
 table 123456701 "CSD Seminar"
 {
     DataClassification = ToBeClassified;
+    LookupPageId = "CSD Seminar List";
+    DrillDownPageId = "CSD Seminar List";
+    
 
     fields
     {

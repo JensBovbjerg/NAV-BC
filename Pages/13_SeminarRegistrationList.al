@@ -67,7 +67,7 @@ page 123456713 "CSD Seminar Registration List"
                     Image = Comment;
                     RunObject = Page 123456706;
                     RunPageLink = "No."=Field("No.");
-                    RunPageView = where("Table Name"=Const("Seminar Registration header"));
+                    RunPageView = where("Table Name"=Const("Seminar Registration"));
                 }
                 action("&Charges")
                 {

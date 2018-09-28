@@ -209,7 +209,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
         </trans-unit>
         <trans-unit id="Table 4096966466 - Field 3808951907 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Seminar,Seminar Registration Header,Posted Seminar Reg. Header</source>
+          <source>Seminar,Seminar Registration,Posted Seminar Registration</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
         </trans-unit>

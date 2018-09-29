@@ -5,7 +5,7 @@ codeunit 123456739 "CSD EventSubScriptions"
      (var ResLedgerEntry: Record "Res. Ledger Entry"; ResJournalLine: Record "Res. Journal Line");
 
     begin
-        ResLedgerEntry."CSD Seminar No." := ResJournalLine."Seminar No.";
-        ResLedgerEntry."CSD Seminar Registration No." := ResJournalLine."Seminar Registration No.";
+        ResLedgerEntry."CSD Seminar No." := ResJournalLine."CSD Seminar No.";
+        ResLedgerEntry."CSD Seminar Registration No." := ResJournalLine."CSD Seminar Registration No.";
     end;
 }

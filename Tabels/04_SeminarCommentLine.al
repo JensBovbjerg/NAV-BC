@@ -1,4 +1,6 @@
 table 123456704 "CSD Seminar Comment Line"
+// JBO lab 3.2
+// lab 7.3.2 
 {
     Caption = 'Seminar Comment Line';
     LookupPageId = "CSD Seminar Comment List";
@@ -20,7 +22,8 @@ table 123456704 "CSD Seminar Comment Line"
         {
             Caption = 'No.';
             TableRelation = if("Table Name" = CONST (Seminar)) "CSD Seminar"
-            else if("Table Name" = const ("Seminar Registration")) "CSD Seminar Reg. Header";
+            else if("Table Name" = const ("Seminar Registration")) "CSD Seminar Reg. Header"
+            else if("Table Name"=const("Posted Seminar Registration")) "CSD Posted Seminar Reg. Header";
         }
         field(40; "Line No."; Integer)
         {

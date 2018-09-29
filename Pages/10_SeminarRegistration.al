@@ -136,7 +136,7 @@ page 123456710 "CSD Seminar Registration"
                 {
                     Caption = 'Co&mments';
                     Image = Comment;
-                    RunObject = Page "CSD Seminar Comment Sheet";
+                    RunObject = Page 123456706;
                     RunPageLink = "No." = Field ("No.");
                     RunPageView = where ("Table Name" = const("Seminar Registration"));
                 }
@@ -147,6 +147,20 @@ page 123456710 "CSD Seminar Registration"
                     RunObject = Page 123456724;
                     RunPageLink = "Document No." = Field ("No.");
                 }
+                 action("&Print1")
+            {
+                Caption = '&Print';
+                Image = Print;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Process;
+                trigger OnAction();
+                var
+                    SeminarReportSelection : Record "CSD Seminar Report Selections";
+                begin
+                    SeminarReportSelection.PrintReportSelection(SeminarReportSelection.Usage::Registration,Rec);
+                end;
+            }       
             }
         }
         area(Processing)
@@ -159,8 +173,22 @@ page 123456710 "CSD Seminar Registration"
                 PromotedIsBig = true;
                 PromotedCategory = Process;
                 ShortcutKey = F9;
-                RunObject = codeunit "CSD Seminar Jnl.-Post Line";
+                RunObject = codeunit "CSD Seminar-Post (Yes/No)";
             }
+            action("&Print")
+            {
+                Caption = '&Print';
+                Image = Print;
+                Promoted = true;
+                PromotedIsBig = true;
+                PromotedCategory = Process;
+                trigger OnAction();
+                var
+                    SeminarReportSelection : Record "CSD Seminar Report Selections";
+                begin
+                    SeminarReportSelection.PrintReportSelection(SeminarReportSelection.Usage::Registration,Rec);
+                end;
+            }            
         }
     }
 }

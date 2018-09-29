@@ -4,7 +4,9 @@ table 123456710 "CSD Seminar Reg. Header"
     //   Chapter 6 - Lab 1-3 & Lab 1-4
     //     - Created new table
     //   Chapter 8 - Lab 2-3
-    //     - Added LookupId and DrillDownPageId
+    // JBO
+    //     - Added LookupId and Dril
+    // JBO 20180929 9.1.1
     Caption = 'Seminar Registration Header';
     LookupPageId= "CSD Posted Seminar Reg. List";
     DrillDownPageId= "CSD Posted Seminar Reg. List";
@@ -291,6 +293,11 @@ table 123456710 "CSD Seminar Reg. Header"
         {
             Caption = 'Posting No.';
         }
+        field(40;"No. Printed";Integer) 
+        { 
+            Caption='No. Printed'; 
+            Editable=false; 
+        }
     }
 
     keys
@@ -353,6 +360,7 @@ table 123456710 "CSD Seminar Reg. Header"
             SeminarSetup.Get;
             SeminarSetup.TestField("Seminar Registration Nos.");
             NoSeriesMgt.InitSeries(SeminarSetup."Seminar Registration Nos.", xRec."No. Series", 0D, "No.", "No. Series");
+            
         end;
         initrecord;
         // >> Lab 8-1

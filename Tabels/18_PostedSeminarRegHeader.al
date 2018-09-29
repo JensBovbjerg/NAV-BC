@@ -2,6 +2,7 @@ table 123456718  "CSD Posted Seminar Reg. Header"
 {
 // JBO 20180929
 // 7 -3-1
+// 8 2.3
     Caption = 'Posted Seminar Reg. Header';
     LookUpPageID= "CSD Posted Seminar Reg. List";
     DrillDownPageID= "CSD Posted Seminar Reg. List";

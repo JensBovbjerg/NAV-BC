@@ -5,7 +5,7 @@ table 123456732 "CSD Seminar Ledger Entry"
     //     - Created new table
     //   Chapter 8 - Lab 2 - 1
     //   Added key2
-    //   Chapter 8 - Lab 2 - 3
+    //   JBO 8 - Lab 2 - 3
     //   Added LookupPageId & DrilldownPageId properties
 
 
@@ -153,6 +153,7 @@ table 123456732 "CSD Seminar Ledger Entry"
             /*
             TableRelation=user where("User Name"=field("User Id"));
             */
+            
             ValidateTableRelation = false;
             trigger OnLookup();
             var

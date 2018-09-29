@@ -3,7 +3,7 @@ page 123456734  "CSD Posted Seminar Reg."
     // CSD1.00 - 2018-01-01 - D. E. Veloper
     //   Chapter 7 - Lab 3
     //     - Created new page
-    //   Chapter 8 - Lab 2 - 4
+    //   JBO 20180929 8 - Lab 2 - 4
     //   Added Action Navigate
     
     Caption = 'Posted Seminar Registration';
